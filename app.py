@@ -99,7 +99,7 @@ with st.form('add_form', clear_on_submit=True):
 
     category = st.selectbox(
         '類別',
-        ['飲食', '交通', '娛樂', '文具', '零用錢', '吃答辯', '購買男童']
+        ['飲食', '交通', '娛樂', '文具', '零用錢', '吃答辯', '購買男童','皮炎派對']
     )
 
     item = st.text_input(

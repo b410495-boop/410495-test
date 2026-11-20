@@ -1,6 +1,5 @@
 import streamlit as st
 import json
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -15,9 +14,6 @@ def load_records():
         return []
     with open(FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
-if st.button('清空'):
-    os.remove('records.json')
-
 def save_records(records):
     with open(FILE, 'w', encoding='utf-8') as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
